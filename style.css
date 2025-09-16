@@ -90,6 +90,23 @@ h1 {
   transform: scale(1.1);
 }
 
+
+.separator {
+  width: 60%;           /* ancho de la línea */
+  height: 2px;          /* grosor de la línea */
+  background-color: #ccc; /* color gris claro */
+  margin: 25px auto;     /* espacio arriba y abajo, centrado */
+  border-radius: 1px;    /* bordes redondeados */
+}
+
+/* Ajuste responsive */
+@media (max-width: 500px) {
+  .separator {
+    width: 80%;
+    margin: 20px auto;
+  }
+}
+
 /* Responsive para móviles */
 @media (max-width: 500px) {
   .logos {
