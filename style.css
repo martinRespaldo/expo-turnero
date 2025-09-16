@@ -57,26 +57,14 @@ h1 {
   transform: translateY(-3px);
 }
 
-/* Redes sociales (opcional)
-.socials {
-  margin-top: 30px;
-  display: flex;
-  justify-content: center;
-  gap: 20px;
+.banner {
+  width: 100%;           /* Se adapta al ancho del contenedor */
+  max-width: 450px;      /* Igual al ancho máximo del container */
+  height: auto;          /* Mantiene la proporción de 1600x400 */
+  border-radius: 12px 12px 0 0; /* Opcional: bordes redondeados arriba */
+  margin-bottom: 20px;   /* Espacio entre banner y título */
+  object-fit: cover;     /* Mantiene la imagen centrada y recortada si hace falta */
 }
-
-.socials img {
-  width: 36px;
-  height: 36px;
-  transition: transform 0.3s;
-}
-
-.socials img:hover {
-  transform: scale(1.2);
-}
-*/
-
-/* Responsive */
 @media (max-width: 500px) {
   h1 {
     font-size: 1.4rem;
