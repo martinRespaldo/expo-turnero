@@ -84,6 +84,7 @@ h1 {
   width: auto;  /* mantiene proporción */
   object-fit: contain;
   transition: transform 0.3s ease;
+  border-radius: 12px;
 }
 
 .logos img:hover {
