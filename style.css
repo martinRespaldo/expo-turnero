@@ -17,8 +17,20 @@ body {
   border-radius: 12px;
   padding: 40px 30px;
   width: 90%;
-  max-width: 450px;
+  max-width: 1000px;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  overflow: hidden; /* evita que algo sobresalga */
+}
+
+/* Banner */
+.banner {
+  width: 100%;
+  max-width: 1000px;
+  height: auto;
+  border-radius: 12px 12px 0 0;
+  margin-bottom: 20px;
+  object-fit: contain;
+  display: block;
 }
 
 /* Título principal */
@@ -57,15 +69,17 @@ h1 {
   transform: translateY(-3px);
 }
 
-.banner {
-  width: 100%;           /* Se adapta al ancho del contenedor */
-  max-width: 450px;      /* Igual al ancho máximo del container */
-  height: auto;          /* Mantiene la proporción de 1600x400 */
-  border-radius: 12px 12px 0 0; /* Opcional: bordes redondeados arriba */
-  margin-bottom: 20px;   /* Espacio entre banner y título */
-  object-fit: cover;     /* Mantiene la imagen centrada y recortada si hace falta */
-}
+/* Responsive */
 @media (max-width: 500px) {
+  .container {
+    padding: 15px 15px 30px;  /* 📌 arriba sin padding, costados 15px, abajo 30px */
+  }
+
+  .banner {
+    margin-bottom: 15px;
+    object-fit: fill;
+  }
+
   h1 {
     font-size: 1.4rem;
   }
@@ -74,10 +88,4 @@ h1 {
     font-size: 1rem;
     padding: 15px 0;
   }
-
-  /* .socials img {
-    width: 30px;
-    height: 30px;
-  } */
 }
-
